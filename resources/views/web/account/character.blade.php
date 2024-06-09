@@ -125,7 +125,7 @@ SOFTWARE.
             </div>
             <div class="card text-center">
                 <div class="card-body">
-                    <img id="character" src="{{ Auth::user()->thumbnail() }}" width="80%">
+                    <img id="character" src="{{ secure_asset(Auth::user()->thumbnail()) }}" width="80%">
                     <div class="angle-buttons mt-1 text-right">
                         <button class="btn @if (Auth::user()->avatar()->angle == 'left') active @endif" data-angle="left">L</button>
                         <button class="btn @if (Auth::user()->avatar()->angle == 'right') active @endif" data-angle="right">R</button>
